@@ -4,15 +4,16 @@ import App from './App.tsx'
 import './index.css'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { Nada } from './assets/Nada.tsx'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/personajes",
     element: <App />,
   },
   {
-    path: '/ruta',
-    element: <div>Esto es una ruta</div>
+    path: '/personaje/:id',
+    element: <Nada/>
   }
 ]);
 
